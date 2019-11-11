@@ -260,10 +260,10 @@
     <Content Include="Views\Contact\Create.cshtml" />
     <Content Include="Views\Book\Create.cshtml" />
     <Content Include="Views\Lecture\Create.cshtml" />
+    <Content Include="Views\Forest\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Forest\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

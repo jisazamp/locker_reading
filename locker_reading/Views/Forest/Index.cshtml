@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Tú bosque</h2>
+
+<hr />
+@{
+    var arboles = ViewBag.Arboles;
+}
+
+<div><b>Has plantado @arboles árboles</b></div>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        @for (int i = 0; i < 50; i++)
+        {
+            <th></th>
+        }
+    </tr>
+
+    @{int partialSum = 0;}
+    @for (int i = 0; i < arboles; i++)
+    {
+        if (partialSum == 50)
+        {
+            <tr>
+            </tr>
+
+            partialSum = 0;
+        }
+
+        else
+        {
+            <td bgcolor="#66ff66" style="width:0.5%"> </td>
+            partialSum++;
+        }
+    }
+
+    @*<tr>
+            <th>Employee Id </th>
+            <th>First Name </th>
+            <th>Last Name </th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Company</th>
+            <th>Department</th>
+        </tr>*@
+    @*@foreach (var d in ecoUser.Models.Forest)
+        {
+            <tr>
+                <td>@d.EmployeeId</td>
+                <td>@d.FirstName</td>
+                <td>@d.LastName</td>
+                <td>@d.Email</td>
+                <td>@d.Salary</td>
+                <td>@d.Company</td>
+                <td>@d.Dept</td>
+
+            </tr>
+
+        }*@
+</table>
+
