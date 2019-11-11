@@ -324,3 +324,4 @@ C:\Users\surassa\Documents\repo\MateoManjarres\locker_reading\locker_reading\obj
 C:\Users\surassa\Documents\repo\MateoManjarres\locker_reading\locker_reading\obj\Debug\locker_reading.csproj.CopyComplete
 C:\Users\surassa\Documents\repo\MateoManjarres\locker_reading\locker_reading\obj\Debug\locker_reading.dll
 C:\Users\surassa\Documents\repo\MateoManjarres\locker_reading\locker_reading\obj\Debug\locker_reading.pdb
+C:\Users\surassa\Documents\repo\MateoManjarres\locker_reading\locker_reading\obj\Debug\locker_reading.Migrations.lecture.resources
