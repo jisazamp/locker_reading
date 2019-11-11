@@ -11,6 +11,7 @@ namespace locker_reading.Models
     public class ApplicationUser : IdentityUser
     {
         public ICollection<Book> Books { get; set; }
+        public ICollection<Lecture> Lectures { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -29,6 +30,7 @@ namespace locker_reading.Models
 
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Book> Books { get; set; }
+        public DbSet<Lecture> Lectures { get; set; }
 
         public static ApplicationDbContext Create()
         {
