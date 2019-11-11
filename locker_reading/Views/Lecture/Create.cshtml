@@ -1,0 +1,76 @@
+﻿@model locker_reading.Models.Lecture
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Registra un avance de lectura</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Book, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.Books, "Seleccione un libro")*@
+                @*@Html.DropDownListFor(m => m.SelectedBook, Model.Books, "Seleccione un libro")*@
+                @Html.DropDownListFor(model => model.SelectedBookId, new SelectList(Model.UserBooks, "Id", "BookName"), "--- Seleccione un libro ---")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumAdvance, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NumAdvance, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NumAdvance, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+    <div class="form-group">
+        @Html.LabelFor(model => model.Finished, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox col-lg-6">
+                @Html.CheckBoxFor(m => m.Finished)
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Review, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Review, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Review, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Crear" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#Review").hide();
+        $("#Finished").click(function () {
+            if ($(this).is(':checked')) {
+                $("#Review").show();
+            }
+            else {
+                $("#Review").hide();
+            }
+        });
+    });
+</script>
+
+<div>
+    @Html.ActionLink("Volver", "Index", "Home")
+</div>
