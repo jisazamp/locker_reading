@@ -103,3 +103,6 @@ C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_r
 C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_reading.csproj.CopyComplete
 C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_reading.dll
 C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_reading.pdb
+C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_reading.Migrations.InitialCreate.resources
+C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_reading.csproj.GenerateResource.cache
+C:\Users\surassa\Documents\repo\locker_reading\locker_reading\obj\Debug\locker_reading.Migrations.contact.resources
