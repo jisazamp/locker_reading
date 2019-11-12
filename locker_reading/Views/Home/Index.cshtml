@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home";
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,29 @@
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
+    <div class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <div class="navbar-header">
+
+                @Html.ActionLink("Locker Reading", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse" id="navbarColor01" style="">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Contacto", "Create", "Contact", null, new { @class = "nav-link" })</li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+
+                        <li class="nav-item">@Html.ActionLink("Mis libros", "Index", "Book", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Avance", "Create", "Lecture", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Bosque", "Index", "Forest", null, new { @class = "nav-link" })</li>
+
+                    }
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
 
     <section id="home" name="home">
         <div id="headerwrap">
