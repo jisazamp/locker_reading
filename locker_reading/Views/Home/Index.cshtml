@@ -1,31 +1,143 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
 }
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<head>
+    <meta charset="utf-8">
+    <title>Home - EcoReading</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <!-- Favicons -->
+    <link href="~/Pratt/img/favicon.png" rel="icon">
+    <link href="~/Pratt/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="~/Pratt/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="~/Pratt/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+      Template Name: Pratt
+      Template URL: https://templatemag.com/pratt-app-landing-page-template/
+      Author: TemplateMag.com
+      License: https://templatemag.com/license/
+    ======================================================= -->
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navigation">
+
+    <section id="home" name="home">
+        <div id="headerwrap">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-12">
+                        <h1>Bienvenido a <b>Locker Reading</b></h1>
+                        <h3>Generar conciencia ambiental mientras se crean mejores hábitos de lectura.</h3>
+                        <br>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5>Lectura</h5>
+                        <p>Pretendemos crear hábitos de lectura, si no los tienes aún.</p>
+                        <img class="hidden-xs hidden-sm hidden-md" src="~/Pratt/img/arrow1.png">
+                    </div>
+                    <div class="col-lg-8">
+                        <img class="img-responsive" src="~/Pratt/img/tree.png" alt="">
+                    </div>
+                    <div class="col-lg-2">
+                        <br>
+                        <img class="hidden-xs hidden-sm hidden-md" src="~/Pratt/img/arrow2.png">
+                        <h5>Ambiente</h5>
+                        <p>Además de generar aún más consciencia ambiental en nuestro entorno.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/ .container -->
+        </div>
+        <!--/ #headerwrap -->
+    </section>
+
+
+    <section id="desc" name="desc">
+        <!-- INTRO WRAP -->
+        <div id="intro">
+            <div class="container">
+                <div class="row centered">
+                    <h1>Características</h1>
+                    <br>
+                    <br>
+                    <div class="col-lg-4">
+                        <img src="~/Pratt/img/intro01.png" alt="">
+                        <h3>Contáctanos</h3>
+                        <p>¡Siempre esperamos recibir comentarios y sugerencias de tu parte!.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="~/Pratt/img/intro02.png" alt="">
+                        <h3>Organiza</h3>
+                        <p>Procura leer por lo menos 10 páginas diarias durante 21 días. Así generarás un nuevo hábito de lectura.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="~/Pratt/img/intro03.png" alt="">
+                        <h3>Monitorea</h3>
+                        <p>Por cada 100 páginas que leas, sembramos un árbol. ¡Te ayudas a ti y al medio ambiente!</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+            </div>
+            <!--/ .container -->
+
+
+
+
+
+            <section id="contact" name="contact">
+                <div id="footerwrap">
+                    <div class="container">
+                        <div class="col-lg-5">
+                            <h3>Nuestras redes</h3>
+                            <a href="http://www.instagram.com/ecoreading"><img src="~/Pratt/img/insta.jpg" style="width:56px;height:56px;" /></a>
+                            <a href="http://www.twitter.com/ecoreading1"><img src="~/Pratt/img/twitter.png" style="width:56px;height:56px;" /> </a>
+                            <a href="mailto:ecoreading@gmail.com"><img src="~/Pratt/img/mail1.png" style="width:56px;height:56px;" /></a>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div id="copyrights">
+        <div class="container">
+            <p>
+                &copy; Copyrights <strong>Pratt</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+                <!--
+                  You are NOT allowed to delete the credit link to TemplateMag with free version.
+                  You can delete the credit link only if you bought the pro version.
+                  Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/pratt-app-landing-page-template/
+                  Licensing information: https://templatemag.com/license/
+                -->
+                Created with Pratt template by <a href="https://templatemag.com/">TemplateMag</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+    <!-- JavaScript Libraries -->
+    <script src="~/Pratt/lib/jquery/jquery.min.js"></script>
+    <script src="~/Pratt/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Pratt/lib/php-mail-form/validate.js"></script>
+    <script src="~/Pratt/lib/easing/easing.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="~/Pratt/js/main.js"></script>
+
+</body>
+</html>
