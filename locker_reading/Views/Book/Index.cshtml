@@ -1,0 +1,64 @@
+﻿@model IEnumerable<locker_reading.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>.</div>
+<div align="center">
+    <img src="~/imagenes/tree-black-silhouette-shape.svg" height="50" width="50" />
+    <h2>
+        Mis Libros
+    </h2>
+</div>
+
+
+<p>
+    @Html.ActionLink("Agregar un libro", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BookName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pages)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Finished)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pages)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Finished)
+            </td>
+            <td>
+                @Html.ActionLink("Registrar avance", "Create", "Lecture") |
+
+            </td>
+        </tr>
+    }
+
+</table>
