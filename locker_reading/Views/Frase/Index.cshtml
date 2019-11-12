@@ -1,0 +1,73 @@
+﻿@model IEnumerable<locker_reading.Models.Lecture>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    .
+</div>
+<div align="center">
+    <img src="~/imagenes/tree-black-silhouette-shape.svg" height="50" width="50" />
+    <h2>Esperamos tu regreso!</h2>
+</div>
+
+@{
+    ViewBag.Title = "Esperamos tu regreso!";
+}
+
+@{
+    Random rnd = new Random();
+
+    var num = rnd.Next(0, 2);
+    var dicho = "";
+    switch (num)
+    {
+        case 0:
+            dicho = "<<Los libros son las abejas que llevan el polen de una inteligencia a otra>>.\nJames Russell Lowell";
+            break;
+        case 1:
+            dicho = "<<La escritura es la pintura de la voz>>.\nVoltaire";
+            break;
+        case 2:
+            dicho = "<<La lectura de un buen libro es un diálogo incesante, en que el libro habla, y el alma contesta>>.\nAndré Maurois";
+            break;
+    }
+
+
+}
+<div>
+    .
+</div>
+<div>
+    .
+</div>
+<div>
+    .
+</div>
+<div>
+    .
+</div>
+<div>
+    <h3>
+        @dicho
+    </h3>
+</div>
+
+<div>
+    .
+</div>
+<div>
+    .
+</div>
+<div>
+    .
+</div>
+<div>
+    .
+</div>
+<div align="center">
+    .
+    <img src="~/imagenes/tree-black-silhouette-shape.svg" height="50" width="50" />
+
+</div>
+

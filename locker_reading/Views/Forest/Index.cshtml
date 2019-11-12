@@ -2,7 +2,19 @@
 @{
     ViewBag.Title = "Index";
 }
-<h2>Tú bosque</h2>
+<div>
+    .
+</div>
+<div align="center">
+    <img src="~/imagenes/tree-black-silhouette-shape.svg" height="50" width="50" />
+    <h2>Tú bosque</h2>
+</div>
+<div>
+    .
+</div>
+<div>
+    .
+</div>
 
 <hr />
 @{
@@ -10,54 +22,32 @@
 }
 
 <div><b>Has plantado @arboles árboles</b></div>
-<table class="table table-bordered table-responsive table-hover">
-    <tr>
-        @for (int i = 0; i < 50; i++)
-        {
-            <th></th>
-        }
-    </tr>
 
-    @{int partialSum = 0;}
-    @for (int i = 0; i < arboles; i++)
+<tr>
+    @for (int i = 0; i < 50; i++)
     {
-        if (partialSum == 50)
-        {
-            <tr>
-            </tr>
+        <th></th>
+    }
+</tr>
 
-            partialSum = 0;
-        }
+@{int partialSum = 0;}
+@for (int i = 0; i < arboles; i++)
+{
+    if (partialSum == 50)
+    {
+        <tr></tr>
 
-        else
-        {
-            <td bgcolor="#66ff66" style="width:0.5%"> </td>
-            partialSum++;
-        }
+        partialSum = 0;
     }
 
-    @*<tr>
-            <th>Employee Id </th>
-            <th>First Name </th>
-            <th>Last Name </th>
-            <th>Email</th>
-            <th>Salary</th>
-            <th>Company</th>
-            <th>Department</th>
-        </tr>*@
-    @*@foreach (var d in ecoUser.Models.Forest)
-        {
-            <tr>
-                <td>@d.EmployeeId</td>
-                <td>@d.FirstName</td>
-                <td>@d.LastName</td>
-                <td>@d.Email</td>
-                <td>@d.Salary</td>
-                <td>@d.Company</td>
-                <td>@d.Dept</td>
+    else
+    {
 
-            </tr>
+        <img src="~/img/tree.jpg" height="40" width="40" />
+        partialSum++;
+    }
+}
 
-        }*@
-</table>
+
+
 

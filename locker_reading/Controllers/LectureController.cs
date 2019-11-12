@@ -13,6 +13,7 @@ namespace locker_reading.Controllers
     [Authorize]
     public class LectureController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         ApplicationDbContext context;
         protected UserManager<ApplicationUser> UserManager { get; set; }
 
@@ -24,7 +25,9 @@ namespace locker_reading.Controllers
         // GET: Lecture
         public ActionResult Index()
         {
-            return View();
+            Lecture model = new Lecture();
+            var bookId = model.SelectedBookId;
+            return View(db.Books.Where(x => x.Id.Equals(bookId)).ToList());
         }
 
         public async Task<ActionResult> Create()
@@ -65,6 +68,7 @@ namespace locker_reading.Controllers
                 model.Finished = true;
                 model.Book.Finished = true;
                 model.NumAdvance = model.Book.Pages;
+
             }
             //ViewBag.Books = new SelectList(context.Books.Where(g => g.ApplicationUser.Id.Equals(user.Id)), "Id", "BookName");
             //int SelectedBook = model.SelectedBook;

@@ -170,7 +170,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\deleteController.cs" />
     <Compile Include="Controllers\ForestController.cs" />
+    <Compile Include="Controllers\FraseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LectureController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -212,6 +214,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="imagenes\logo.png" />
+    <Content Include="imagenes\tree-black-silhouette-shape.svg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\tree.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -262,9 +268,12 @@
     <Content Include="Views\Lecture\Create.cshtml" />
     <Content Include="Views\Forest\Index.cshtml" />
     <Content Include="Views\Book\Index.cshtml" />
+    <Content Include="Views\Frase\Index.cshtml" />
+    <Content Include="Views\Home\Frase.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\delete\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

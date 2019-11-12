@@ -22,9 +22,13 @@ namespace locker_reading.Controllers
             this.UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
         }
         // GET: Contact
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View(context.Books.ToList());
+            Lecture model = new Lecture();
+            var bookId = model.SelectedBookId;
+            var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
+
+            return View(context.Books.Where(g => g.ApplicationUser.Id.Equals(user.Id)));
         }
         public ActionResult Create()
         {
@@ -46,4 +50,4 @@ namespace locker_reading.Controllers
             return View(model);
         }
     }
-    }
+}
