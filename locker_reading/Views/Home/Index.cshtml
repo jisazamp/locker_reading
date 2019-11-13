@@ -19,8 +19,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
 
-    <!-- Bootstrap CSS File -->
-    <link href="~/Pratt/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
 
     <!-- Main Stylesheet File -->
     <link href="~/Pratt/css/style.css" rel="stylesheet">
@@ -93,11 +93,21 @@
     <section id="desc" name="desc">
         <!-- INTRO WRAP -->
         <div id="intro">
-            <div class="container">
+            <div class="container" align ="center">
+                <h1>Características</h1>
+                <br>
+
+                <br>
                 <div class="row centered">
-                    <h1>Características</h1>
+
                     <br>
+
                     <br>
+                    <div class="col-lg-4">
+                        <img src="~/Pratt/img/intro03.png" alt="">
+                        <h3>Monitorea</h3>
+                        <p>Por cada 100 páginas que leas, sembramos un árbol. ¡Te ayudas a ti y al medio ambiente!</p>
+                    </div>
                     <div class="col-lg-4">
                         <img src="~/Pratt/img/intro01.png" alt="">
                         <h3>Contáctanos</h3>
@@ -108,11 +118,7 @@
                         <h3>Organiza</h3>
                         <p>Procura leer por lo menos 10 páginas diarias durante 21 días. Así generarás un nuevo hábito de lectura.</p>
                     </div>
-                    <div class="col-lg-4">
-                        <img src="~/Pratt/img/intro03.png" alt="">
-                        <h3>Monitorea</h3>
-                        <p>Por cada 100 páginas que leas, sembramos un árbol. ¡Te ayudas a ti y al medio ambiente!</p>
-                    </div>
+
                 </div>
                 <br>
                 <hr>
@@ -121,20 +127,21 @@
 
 
 
-
+            
 
             <section id="contact" name="contact">
                 <div id="footerwrap">
                     <div class="container">
                         <div class="col-lg-5">
                             <h3>Nuestras redes</h3>
-                            <a href="http://www.instagram.com/ecoreading"><img src="~/Pratt/img/insta.jpg" style="width:56px;height:56px;" /></a>
-                            <a href="http://www.twitter.com/ecoreading1"><img src="~/Pratt/img/twitter.png" style="width:56px;height:56px;" /> </a>
-                            <a href="mailto:ecoreading@gmail.com"><img src="~/Pratt/img/mail1.png" style="width:56px;height:56px;" /></a>
+                            <a href="http://www.instagram.com/lockerproyect"><img src="~/Pratt/img/insta.jpg" style="width:56px;height:56px;" /></a>
+                            <a href="http://www.twitter.com/lockerproyect"><img src="~/Pratt/img/twitter.png" style="width:56px;height:56px;" /> </a>
+                            <a href="mailto:locker.proyect@gmail.com"><img src="~/Pratt/img/mail1.png" style="width:56px;height:56px;" /></a>
                         </div>
 
                     </div>
                 </div>
+            </section>
         </div>
     </section>
     <div id="copyrights">
@@ -159,7 +166,8 @@
     <script src="~/Pratt/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/Pratt/lib/php-mail-form/validate.js"></script>
     <script src="~/Pratt/lib/easing/easing.min.js"></script>
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
     <!-- Template Main Javascript File -->
     <script src="~/Pratt/js/main.js"></script>
 
